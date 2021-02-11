@@ -27,6 +27,8 @@ namespace MemcardRex
         [STAThread]
         static void Main()
         {
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new mainWindow());

@@ -46,7 +46,7 @@ namespace MemcardRex
             if (Button2Selected == true) Button1.TabIndex = 3;
 
             //Play an exclamation sound
-            if(PlayExclamationSound == true)SystemSounds.Exclamation.Play();
+            if(PlayExclamationSound == true) SystemSounds.Exclamation.Play();
 
             //Resize the form according to the message width
             this.ClientSize = new Size(MessageLabel.Width + 32, MessageLabel.Height + 80);
