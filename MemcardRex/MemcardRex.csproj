@@ -19,7 +19,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'WinForms debug|AnyCPU' ">
@@ -81,5 +80,11 @@
     <PackageReference Include="System.IO.Ports" Version="5.0.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
   </ItemGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <Description>Memory Card utility</Description>
+    <Company>Shendo</Company>
+    <Copyright>Copyright © Shendo 2007 - 2017</Copyright>
+    <Authors>Shendo</Authors>
+    <Version>0.0.0</Version>
+  </PropertyGroup>
 </Project>
