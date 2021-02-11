@@ -22,12 +22,12 @@ namespace MemcardRex
             InitializeComponent();
         }
 
-        public string ShowMessage(Form HostForm, string WindowCaption, string Message, string Button1Text, string Button2Text, bool PlayExclamationSound)
+        public string ShowMessage(Form HostForm, string WindowCaption, string Message, string Button1Text, string Button2Text)
         {
-            return ShowMessage(HostForm, WindowCaption, Message, Button1Text, Button2Text, PlayExclamationSound, false);
+            return ShowMessage(HostForm, WindowCaption, Message, Button1Text, Button2Text, false);
         }
 
-        public string ShowMessage(Form HostForm, string WindowCaption, string Message, string Button1Text, string Button2Text, bool PlayExclamationSound, bool Button2Selected)
+        public string ShowMessage(Form HostForm, string WindowCaption, string Message, string Button1Text, string Button2Text, bool Button2Selected)
         {
             //Add a window caption
             this.Text = WindowCaption;
@@ -44,9 +44,6 @@ namespace MemcardRex
 
             //If Button 2 should be selected change Tab index for Button1
             if (Button2Selected == true) Button1.TabIndex = 3;
-
-            //Play an exclamation sound
-            if(PlayExclamationSound == true) SystemSounds.Exclamation.Play();
 
             //Resize the form according to the message width
             this.ClientSize = new Size(MessageLabel.Width + 32, MessageLabel.Height + 80);

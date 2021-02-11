@@ -947,7 +947,7 @@ namespace MemcardRex
             //Check if the file has been changed
             if (PScard[listIndex].changedFlag)
             {
-                if (new messageWindow().ShowMessage(this, appName, "Do you want to save changes to '" + PScard[listIndex].cardName + "'?", "No", "Yes", true, true) == "Yes")
+                if (new messageWindow().ShowMessage(this, appName, "Do you want to save changes to '" + PScard[listIndex].cardName + "'?", "No", "Yes", true) == "Yes")
                     saveCardFunction(listIndex);
             }
         }
