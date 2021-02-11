@@ -3,8 +3,8 @@
 ![memcardrex](https://cloud.githubusercontent.com/assets/8411572/25514938/21160ed8-2be1-11e7-9848-e086a5ac5859.png)
 
 <b>Requirements:</b>
-* .NET Framework 3.5.
-* Windows® Vista™ or 7 for the glass status bar.
+* .NET 5.0
+* Windows 7 SP1 or later
 
 <b>Supported Memory Card formats:</b>
 * ePSXe/PSEmu Pro Memory Card(*.mcr)
